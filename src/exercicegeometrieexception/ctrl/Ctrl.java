@@ -18,7 +18,7 @@ public class Ctrl implements ICtrlIhm {
             double valueDouble = Double.parseDouble(value);
             refIhm.afficheResultatCircle(String.valueOf(refWorker.calcRadiusCircleFromArea(valueDouble)));
         } catch (NumberFormatException e) {
-            refIhm.afficheMessage("Veuillez entrer une valeur valide pour l'aire du cercle");
+            refIhm.afficheMessage("Veuillez entrer une valeur valide pour l'aire du cercle ( " + value + " invalide )");
         }
     }
 
